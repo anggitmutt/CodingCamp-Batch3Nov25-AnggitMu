@@ -8,21 +8,21 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
-    <header class="main-header">
+    <header class="main-header relative m-10">
         <!-- ini header -->
          <div class="logo">
             <!-- logo  -->
          </div>
          <nav class="flex">
-            <a class="border rounded p-2" href="http://">Home</a>
-            <a class="border rounded p-2" href="http://">About</a>
-            <a class="border rounded p-2" href="http://">Products</a>
-            <a class="border rounded p-2" href="http://">How to</a>
-            <a class="border rounded p-2" href="http://">Contact Us</a>
+            <a class="border rounded p-2" href="#welcome-msg">Home</a>
+            <a class="border rounded p-2" href="#about">About</a>
+            <a class="border rounded p-2" href="#products">Products</a>
+            <a class="border rounded p-2" href="#how-to">How to</a>
+            <a class="border rounded p-2" href="#contact-us">Contact Us</a>
          </nav>
     </header>
     <hr>
-    <main>
+    <main class="mt-5 m-10">
         <!-- ini main -->
          <section id="home-page" class="min-h-[500px] text-center">
             <!-- Home -->
@@ -30,25 +30,97 @@
                 Welcome to wanefwan
              </h2>
              <p class="mt-2" >We are Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores id molestiae, nisi quos vel saepe similique distinctio aliquam sequi ipsa. Atque magni consequuntur reprehenderit sunt animi aut, voluptatem quisquam sit.</p>
+             <br>
+             <hr>
          </section>
-         <section>
+         <section id="about" class="min-h-[200px] text-center">
             <!-- About -->
+             <h2 class="text-xl font-bold">
+                About Wanefwan
+             </h2>
+             <p class="mt-2" >We are Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores id molestiae, nisi quos vel saepe similique distinctio aliquam sequi ipsa. Atque magni consequuntur reprehenderit sunt animi aut, voluptatem quisquam sit.</p>
+             <br>
+             <hr>
          </section>
-         <section>
+         <section id="products" class="min-h-[500px] text-center">
             <!-- Products -->
+             <h2 class="text-xl font-bold">
+                Our Products
+             </h2>
+             <p class="mt-2" >We are Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores id molestiae, nisi quos vel saepe similique distinctio aliquam sequi ipsa. Atque magni consequuntur reprehenderit sunt animi aut, voluptatem quisquam sit.</p>
+             <br>
+             <div class="w-fit mx-auto grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 justify-items-center justify-center gap-y-10 gap-x-10">
+                <div class="">
+                    <img src="img/keychains.webp" alt="keychains" class="h-80 w-64 object-cover rounded-t-xl">
+                    <p class="text-lg font-bold text-black truncate block capitalize">Keychains</p>
+                </div>
+                <div class="">
+                    <img src="img/mousepad.webp" alt="keychains" class="h-80 w-64 object-cover rounded-t-xl">
+                    <p class="text-lg font-bold text-black truncate block capitalize">Mousepads</p>
+                </div>
+                <div class="">
+                    <img src="img/lanyards.webp" alt="keychains" class="h-80 w-64 object-cover rounded-t-xl">
+                    <p class="text-lg font-bold text-black truncate block capitalize">lanyards</p>
+                </div>
+             </div>
+             <br>
+             <hr>
          </section>
-         <section>
+         <section id="how-to" class="min-h-[200px] text-center">
             <!-- How to -->
+             <h2 class="text-xl font-bold">
+                How to Order
+             </h2>
+             <p class="mt-2" >We are Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores id molestiae, nisi quos vel saepe similique distinctio aliquam sequi ipsa. Atque magni consequuntur reprehenderit sunt animi aut, voluptatem quisquam sit.</p>
+             <br>
+             <hr>
          </section>
-         <section>
+         <section id="contact-us" class="min-h-[500px] text-center">
             <!-- Contact Us -->
-             <p class="w-full p02 border rounded" type="text"></p>
-             <form action=""></form>
+            <header>
+                <h2 class="text-xl font-bold">
+                    Contact Us
+                </h2>
+                <p class="mt-2" >We are Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores id molestiae, nisi quos vel saepe similique distinctio aliquam sequi ipsa. Atque magni consequuntur reprehenderit sunt animi aut, voluptatem quisquam sit.</p>
+            </header>
+            <div class="grid grid-cols-2 gap-4">
+                <div class="p-4">
+                    <!-- left -->
+                    <form>
+                    <div class="flex flex-wrap -mx-3 mb-6">
+                        <label class="block mb-2" for="name">Name : </label>
+                        <input class="w-full p-2 border rounded" type="name" name="name" id="name" placeholder="Write Your Name">
+                    </div>
+                    <div class="flex flex-wrap -mx-3 mb-6">
+                        <label class="block mb-2" for="email">Email : </label>
+                        <input class="w-full p-2 border rounded" type="email" name="email" id="email" placeholder="Write Your Email">
+                    </div>
+                    <div class="flex flex-wrap -mx-3 mb-6">
+                        <label class="block mb-2" for="email">When to order : </label>
+                        <input class="w-full p-2 border rounded" type="date" name="date" id="date">
+                    </div>
+                    <div class="flex flex-wrap -mx-3 mb-6">
+                        <label class="block mb-2" for="Message">Message : </label>
+                        <textarea class="block w-full border rounded p-2 px-4 mb-3" name="message" id="message" cols="30" rows="10" placeholder="Write Your Message"></textarea>
+                    </div>
+                    <button class="px-4 bg-blue-500 text-white rounded">Send</button>
+                    </form>
+                </div>
+                <div>
+                    <!-- right side -->
+                    <div class="bg-blue-200 p-4 rounded">Item 2</div>
+                </div>
+            </div>
          </section>
+             <br>
+             <hr>
     </main>
 
     <footer>
         <!-- ini footer -->
+         <div>
+
+         </div>
     </footer>
     <script src="js/script.js"></script>
 </body>
